@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  @apply text-8xl font-normal text-gray-900 text-center;
+}
+
+@layer components {
+  .title-h1 {
+    @apply text-8xl font-normal text-primary;
+  }
+
+  .title-h3 {
+    @apply text-4xl font-normal;
+  }
+
+  .desc-1 {
+    @apply text-3xl mt-4 text-primary;
+  }
+
+  .img-radius {
+    @apply object-cover h-[565px] w-[378px] rounded-full border-y-8 border-y-gray-400;
+  }
+  .img-half-circle {
+    @apply h-[400px] w-[378px] rounded-t-full overflow-hidden object-cover;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .img-card {
+    @apply rounded-2xl w-[294px] h-[349px];
+  }
+}
